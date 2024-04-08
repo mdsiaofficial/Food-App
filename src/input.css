@@ -6,6 +6,10 @@
 
 @layer{
     body{
-        @apply text-white bg-[#091947] font-ibmplexMono tracking-wider
+        @apply
+        text-white 
+        /* bg-[#091947]  */
+        font-ibmplexMono 
+        tracking-wider
     }
 }

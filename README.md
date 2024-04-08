@@ -1,4 +1,4 @@
-Project - 8: Food-App
+# Project - 8: Food-App
 Icon used:
 
 **Remix icon**

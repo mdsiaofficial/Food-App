@@ -6,7 +6,7 @@
     <title>Food App</title>
 
     <!-- favicon -->
-    <link rel="stylesheet" href="img/favicon.png">
+    <link rel="stylesheet" href="img/favicon.png" type="image/x-icon">
 
     <!-- font awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -22,41 +22,48 @@
 <body>
     
     <!-- header -->
-    <header class="bg-[crimson] fixed top-0 left-0 z-50 w-full rounded-lg">
+    <header class="fixed top-0 left-0 z-50 w-full bg-darkBlue">
         
         <!-- nav -->
-        <nav class="flex justify-between items-center p-0 mx-5">
-            <div><h1 >              
-                <a href="#" class="text-3xl uppercase">
-                    Bur<span class="text-slate-950">ger</span>
-                </a></h1>
+        <nav class="container relative flex justify-between items-center">
+            <!-- logo -->
+            <div >
+                <a href="#" class="text-5xl uppercase">Bur<span class="text-primary">ger</span></a>
             </div>
 
-            <!-- menu item -->
-            <div class="absolute top-0 left-0 w-full py-14 bg-primary border-2 border-secondary">
+            <!-- menu -->
+            <div class="hidden absolute top-0 left-0 w-full py-14 bg-primary border-2 border-darkBlue md:block md:static md:py-0 md:border-none md:w-auto md:ml-auto" id="nav-menu">
+
+                <!-- menu list -->
                 <ul class="flex flex-col text-center gap-5">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Food Menu</a></li>
-                    <li><a href="#">Review</a></li>
+                    <li><a href="#home" class="nav__link hover:text-darkBlue ease-in duration-600">Home</a></li>
+                    <li><a href="#order" class="nav__link hover:text-darkBlue ease-in duration-600">Order</a></li>
+                    <li><a href="#order" class="nav__link hover:text-darkBlue ease-in duration-600">Review</a></li>
                 </ul>
 
-                <div class="">
+                <!-- button -->
+                <div class="absolute top-[0.7rem] right-2" >
                     <!-- <i class="ri-close-line"></i> -->
-                    <h1>X</h1>
+                    <i id="nav-close" class="text-2xl cursor-pointer fa-solid fa-x"></i>
+                    <!-- <h1 id="nav-close" class="text-lg cursor-pointer">X</h1> -->
+                    <!-- <img id="nav-close" class="bg-white rounded-full" src="/src/img/icons/close-line.png" alt=""> -->
                 </div>
-                
             </div>
-            <div class="">
-
+            
+            <!-- moon-line -->
+            <div class="flex justify-center items-center gap-2">
                 <!-- <i class="ri-moon-line"></i> -->
-                <!-- <i class="ri-moon-line"></i> -->
-                <h1>Q</h1>
-
-                <div class="">
-                    <!-- <i class="ri-menu-2-line"></i> -->
-                    <!-- <i class="ri-menu-2-line"></i> -->
-                    <h1>Z</h1>
-                </div>
+                <i id="dark-btn" class="text-2xl cursor-pointer fa-regular fa-moon"></i>
+                <!-- <h1 class="cursor-pointer ml-4 text-xl">DL</h1> -->
+                <!-- <img id="dark-btn" class="bg-white rounded-full" src="/src/img/icons/moon-line.png" alt=""> -->
+                
+                <!-- menu-line -->
+                
+                <!-- <i class="ri-menu-2-line">M</i> -->
+                <i id="menu-btn" class="text-2xl cursor-pointer fa-solid fa-bars"></i>
+                <!-- <img id="menu-btn" class="cursor-pointer w-auto bg-white rounded-full" src="/src/img/icons/menu-2-line.png" alt=""> -->
+                <!-- <h1 id="menu-btn" class="cursor-pointer text-xl">M</h1> -->
+                
             </div>
         </nav>
     </header>
@@ -66,5 +73,7 @@
 
     <!-- footer -->
 
+    <!-- javascript -->
+    <script src="script.js"></script>
 </body>
 </html>

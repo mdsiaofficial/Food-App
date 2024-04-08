@@ -2,20 +2,24 @@
 module.exports = {
   content: ["./src/index.html/", "*"],
   theme: {
+    
     screens: {
-      'sm': '640px',
+      sm: "480px",
+      // => @media (min-width: 480px) { ... }
+
+      md: "640px",
       // => @media (min-width: 640px) { ... }
 
-      'md': '768px',
+      mmd: "768px",
       // => @media (min-width: 768px) { ... }
 
-      'lg': '1024px',
+      lg: "1024px",
       // => @media (min-width: 1024px) { ... }
 
-      'xl': '1280px',
+      xl: "1280px",
       // => @media (min-width: 1280px) { ... }
 
-      '2xl': '1536px',
+      xxl: "1536px",
       // => @media (min-width: 1536px) { ... }
     },
 
@@ -30,6 +34,7 @@ module.exports = {
         red: '#ff0000',
         dark: '#0f172a',
         darkLight: '#1e293b',
+        darkBlue: "#091947",
       }
     },
     container:{
@@ -37,9 +42,10 @@ module.exports = {
       padding: {
         DEFAULT: '1rem',
         sm: '1.5rem',
+        md: '2.5rem',
         lg: '4rem',
         xl: '5rem',
-        '2xl': '6rem',
+        xxl: '6rem',
       },
     },
 
