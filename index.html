@@ -29,7 +29,7 @@
 <body>
 
     <!-- header -->
-    <header class="fixed top-0 left-0 z-50 w-full bg-darkBlue bg-opacity-80">
+    <header class="fixed top-0 left-0 z-50 w-full bg-darkBlue bg-opacity-80 border-b-2 border-darkBlue" id="header">
 
         <!-- nav -->
         <nav class="container relative flex justify-between items-center">
@@ -60,17 +60,13 @@
 
             <!-- moon-line -->
             <div class="flex justify-center items-center gap-2">
-                <!-- <i class="ri-moon-line"></i> -->
-                <i id="dark-btn" class="text-2xl cursor-pointer fa-regular fa-moon"></i>
-                <!-- <h1 class="cursor-pointer ml-4 text-xl">DL</h1> -->
-                <!-- <img id="dark-btn" class="bg-white rounded-full" src="/src/img/icons/moon-line.png" alt=""> -->
+                
+                <i id="dark-btn" class="text-2xl cursor-pointer fa-regular fa-moon" id="theme-toggle"></i>
 
                 <!-- menu-line -->
-                <!-- <i class="ri-menu-2-line">M</i> -->
+                
                 <i id="menu-btn" class="md:hidden text-2xl cursor-pointer fa-solid fa-bars"></i>
-                <!-- <img id="menu-btn" class="cursor-pointer w-auto bg-white rounded-full" src="/src/img/icons/menu-2-line.png" alt=""> -->
-                <!-- <h1 id="menu-btn" class="cursor-pointer text-xl">M</h1> -->
-
+                
             </div>
         </nav>
     </header>
@@ -135,7 +131,7 @@
                 <div>
 
                     <div class="mb-2 text-slate-600">
-                        <h4 class="card__title">Food</h4>
+                        <h4 class="card__title">Burger</h4>
                         <p class="">Lorem ipsum dolor, sit amet.</p>
                     </div>
 
@@ -153,7 +149,7 @@
                 <div>
 
                     <div class="mb-2 text-white">
-                        <h4 class="card__title">Food</h4>
+                        <h4 class="card__title">Beverage</h4>
                         <p class="">Lorem ipsum dolor, sit amet.</p>
                     </div>
 
@@ -171,7 +167,7 @@
                 <div>
 
                     <div class="mb-2 text-black">
-                        <h4 class="card__title">Food</h4>
+                        <h4 class="card__title">Snacks</h4>
                         <p class="">Lorem ipsum dolor, sit amet.</p>
                     </div>
 
@@ -741,6 +737,12 @@
             </div>
         </section>
     </footer>
+
+
+    <!-- scroll up button -->
+    <a href="#" class="fixed right-4 -bottom-1/2 bg-primary shadow-sm inline-block px-4 py-2 rounded-full text-white text-lg z-50 hover:translate-y-1 ease-in duration-200" id="scroll-up">
+        <i class="fa-solid fa-arrow-up"></i>
+    </a>
 
 
     <!-- javascript -->

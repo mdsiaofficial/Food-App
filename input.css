@@ -5,12 +5,17 @@
 @tailwind utilities;
 
 @layer base{
+    html{
+        @apply
+        scroll-smooth
+    }
     body{
         @apply
         text-white 
         bg-[#091947] 
         font-ibmplexMono 
-        tracking-wider;
+        tracking-wider
+        dark:bg-black;
     }
 
     section{
