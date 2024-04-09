@@ -51,6 +51,25 @@
         lg:text-6xl;
     }
 
+    .card__title{
+        @apply
+        text-xl
+        font-ibmplexMono
+        font-bold
+        uppercase
+        lg:text-3xl;
+    }
+
+    .about__title{
+        @apply
+        text-3xl
+        font-ibmplexMono
+        font-bold
+        uppercase
+        lg:text-4xl;
+    }
+
+
     .seperator{
         @apply
         w-52 h-[3px]
@@ -64,6 +83,8 @@
         text-xs
         leading-5;
     }
+
+
 
 
 }
