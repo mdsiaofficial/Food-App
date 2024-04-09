@@ -701,6 +701,11 @@ section{
   z-index: 50;
 }
 
+.mx-0{
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
 .mx-10{
   margin-left: 2.5rem;
   margin-right: 2.5rem;
@@ -743,12 +748,32 @@ section{
   display: none;
 }
 
-.h-\[2px\]{
-  height: 2px;
+.h-\[3px\]{
+  height: 3px;
+}
+
+.w-0{
+  width: 0px;
+}
+
+.w-1{
+  width: 0.25rem;
+}
+
+.w-10{
+  width: 2.5rem;
+}
+
+.w-2{
+  width: 0.5rem;
 }
 
 .w-28{
   width: 7rem;
+}
+
+.w-52{
+  width: 13rem;
 }
 
 .w-60{
@@ -795,6 +820,14 @@ section{
   align-items: center;
 }
 
+.justify-start{
+  justify-content: flex-start;
+}
+
+.justify-end{
+  justify-content: flex-end;
+}
+
 .justify-center{
   justify-content: center;
 }
@@ -809,6 +842,10 @@ section{
 
 .gap-2{
   gap: 0.5rem;
+}
+
+.gap-20{
+  gap: 5rem;
 }
 
 .gap-4{
@@ -868,6 +905,11 @@ section{
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
+.bg-yellow{
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 212 59 / var(--tw-bg-opacity));
+}
+
 .p-4{
   padding: 1rem;
 }
@@ -899,6 +941,10 @@ section{
 
 .pt-16{
   padding-top: 4rem;
+}
+
+.text-left{
+  text-align: left;
 }
 
 .text-center{
@@ -1010,10 +1056,16 @@ section{
 .seperator{
   margin-top: 1.25rem;
   margin-bottom: 1.25rem;
-  height: 2px;
-  width: 7rem;
+  height: 3px;
+  width: 13rem;
   --tw-bg-opacity: 1;
-  background-color: rgb(9 25 71 / var(--tw-bg-opacity));
+  background-color: rgb(255 212 59 / var(--tw-bg-opacity));
+}
+
+@media (min-width: 640px){
+  .seperator{
+    width: 33.333333%;
+  }
 }
 
 .paragraph{
@@ -1031,6 +1083,11 @@ section{
     position: static;
   }
 
+  .md\:mx-auto{
+    margin-left: auto;
+    margin-right: auto;
+  }
+
   .md\:ml-auto{
     margin-left: auto;
   }
@@ -1041,6 +1098,10 @@ section{
 
   .md\:hidden{
     display: none;
+  }
+
+  .md\:w-2\/6{
+    width: 33.333333%;
   }
 
   .md\:w-auto{
@@ -1059,6 +1120,10 @@ section{
     flex-direction: row;
   }
 
+  .md\:gap-20{
+    gap: 5rem;
+  }
+
   .md\:border-none{
     border-style: none;
   }
@@ -1070,5 +1135,9 @@ section{
   .md\:py-0{
     padding-top: 0px;
     padding-bottom: 0px;
+  }
+
+  .md\:text-left{
+    text-align: left;
   }
 }

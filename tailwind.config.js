@@ -24,6 +24,7 @@ module.exports = {
     },
 
     extend: {
+      // custom colors
       colors: {
         primary: 'crimson',
         secondary: '#64748b',
@@ -36,8 +37,20 @@ module.exports = {
         darkLight: '#1e293b',
         darkBlue: "#091947",
         yellow: "#FFD43B",
-      }
+      },
+
+      // animation
+      keyframes:{
+        move:{
+          "50%": {transform: "translateY(-1rem)"},
+        },
+        animation:{
+          "movingY": "move 2s linear infinite",
+        },
+      },
     },
+
+    // custom container
     container:{
       center: true,
       padding: {
@@ -50,6 +63,7 @@ module.exports = {
       },
     },
 
+    // custom fonts
     fontFamily: {
       overpass: ['Overpass', 'sans-serif'],
       overpassMono: ['Overpass Mono', 'monospace'],

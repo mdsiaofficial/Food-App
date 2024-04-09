@@ -53,8 +53,9 @@
 
     .seperator{
         @apply
-        w-28 h-[2px]
-        bg-darkBlue
+        w-52 h-[3px]
+        md:w-2/6
+        bg-yellow
         my-5;
     }
 
