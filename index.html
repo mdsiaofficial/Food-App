@@ -657,20 +657,133 @@
         </div>
     </section>
 
+    <!-- contact -->
+    <section id="contact" class="bg-yellow text-dark py-16">
+        <div class="container flex flex-col gap-5 md:items-center md:flex-row">
+            <div class="space-y-4">
+                <h2 class="section__title font-bold text-2xl">Get Exclusive Offers</h2>
+                <p class="font-medium">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+
+            </div>
+
+            <div class="flex flex-col gap-3 md:flex-row m-3 ">
+
+                <input type="email" name="" id="" placeholder="username@email.com"
+                    class="p-2 text-black rounded-lg outline-none md:w-auto">
+                <a href="#" class="flex flex-col md:flex-row justify-center btn btn-primary hover:opacity-75"><i
+                        class="fa-regular fa-paper-plane"></i>Subscribe</a>
+    
+            </div>
+        </div>
+    </section>
+
+
     <!-- footer -->
+
+    <footer>
+        <section class="footer">
+
+            <div class="container">
+                <ul class="grid grid-cols-1 items-start gap-5 pb-5 md:grid-cols-2 lg:grid-cols-4">
+
+                    <li>
+                        <div class="space-y-3">
+                            <a href="#" class="text-5xl uppercase">Bur<span class="text-primary">ger</span></a>
+
+                            <p class="">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nesciunt facilis itaque dolorum pariatur dolor, ea fuga fugit, molestias alias aliquam aut consequatur veritatis earum velit explicabo ipsum excepturi vel eligendi.</p>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="flex flex-col gap-3">
+                            <h3 class="text-lg uppercase font-bold">Support</h3>
+                            <a href="#" class="text-lg hover:text-primary">FAQ</a>
+                            <a href="#" class="text-lg hover:text-primary">Terms and Condition</a>
+                            <a href="#" class="text-lg hover:text-primary">Contact</a>
+                            <a href="#" class="text-lg hover:text-primary">Privacy</a>
+
+                        </div>
+                    </li>
+
+                    <li class="space-y-8">
+
+                        <div class="space-y-2">
+                            <h3 class="text-lg uppercase font-bold">Phone</h3>
+                            <p class="flex items-center gap-2"><i class="fa-solid fa-phone text-primary"></i> +880123456789</p>
+                        </div>
+                        <div class="space-y-2">
+                            <h3 class="text-lg uppercase font-bold">Email</h3>
+                            <p class="flex items-center gap-2"><i class="fa-solid fa-envelope text-primary"></i> burger@email.com</p>
+                        </div>
+                        <div class="space-y-2">
+                            <h3 class="text-lg uppercase font-bold">Address</h3>
+                            <p class="flex items-center gap-2><i class="fa-solid fa-map-location-dot text-primary"></i>Rajashon, Savar, Dhaka - 1340</p>
+                        </div>
+                        
+                    </li>
+
+                    <li class="space-y-8">
+                        <div class="space-y-2 ">
+                            <h3 class="text-lg uppercase font-bold">Follow Us</h3>
+                            <div class="space-x-3">
+                                <i class="fa-brands fa-square-facebook text-2xl text-primary"></i>
+                                <i class="fa-brands fa-square-x-twitter text-2xl text-primary"></i>
+                                <i class="fa-brands fa-linkedin text-2xl text-primary"></i>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+
+
+                <div class="flex flex-col items-center border-t border-primary py-5 md:flex-row md:justify-between">
+                    <p>Burger © 2022. All rights reserved</p>
+                </div>
+            </div>
+        </section>
+    </footer>
+
 
     <!-- javascript -->
     <script src="script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+
     <!-- swiper pagination -->
     <script>
         const swiper = new Swiper('.swiper', {
-            
+
+            speed: 400,
+            spaceBetween: 30,
 
             // If we need pagination
             pagination: {
                 el: '.swiper-pagination',
+                clickable: true,
             },
+
+            autoplay: {
+                delay: 3000,
+                disableOnInteraction: false,
+            },
+
+
+            breakpoints: {
+                // when window width is >= 640px
+                640: {
+                    slidesPerView: 1,
+                    spaceBetween: 20
+                },
+                // when window width is >= 768px
+                768: {
+                    slidesPerView: 2,
+                    spaceBetween: 30
+                },
+                // when window width is >= 1024px
+                1024: {
+                    slidesPerView: 3,
+                    spaceBetween: 40
+                }
+            }
 
         });
     </script>
