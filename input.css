@@ -60,7 +60,8 @@
         lg:text-3xl;
     }
 
-    .about__title{
+    .about__title,
+    .menu__title{
         @apply
         text-3xl
         font-ibmplexMono
@@ -84,7 +85,10 @@
         leading-5;
     }
 
-
-
-
 }
+
+.tabs_wrap ul li.active{
+    @apply
+    bg-indigo-950
+}
+
