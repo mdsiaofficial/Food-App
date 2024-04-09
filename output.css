@@ -728,6 +728,10 @@ section{
   margin-bottom: 0.5rem;
 }
 
+.ml-2{
+  margin-left: 0.5rem;
+}
+
 .ml-4{
   margin-left: 1rem;
 }
@@ -764,6 +768,18 @@ section{
   display: none;
 }
 
+.h-14{
+  height: 3.5rem;
+}
+
+.h-16{
+  height: 4rem;
+}
+
+.h-40{
+  height: 10rem;
+}
+
 .h-56{
   height: 14rem;
 }
@@ -772,8 +788,8 @@ section{
   height: 3px;
 }
 
-.h-40{
-  height: 10rem;
+.h-auto{
+  height: auto;
 }
 
 .w-0{
@@ -788,12 +804,28 @@ section{
   width: 2.5rem;
 }
 
+.w-14{
+  width: 3.5rem;
+}
+
+.w-16{
+  width: 4rem;
+}
+
 .w-2{
   width: 0.5rem;
 }
 
+.w-24{
+  width: 6rem;
+}
+
 .w-28{
   width: 7rem;
+}
+
+.w-32{
+  width: 8rem;
 }
 
 .w-40{
@@ -804,6 +836,10 @@ section{
   width: 11rem;
 }
 
+.w-48{
+  width: 12rem;
+}
+
 .w-52{
   width: 13rem;
 }
@@ -812,28 +848,16 @@ section{
   width: 15rem;
 }
 
+.w-64{
+  width: 16rem;
+}
+
 .w-auto{
   width: auto;
 }
 
 .w-full{
   width: 100%;
-}
-
-.w-24{
-  width: 6rem;
-}
-
-.w-48{
-  width: 12rem;
-}
-
-.w-64{
-  width: 16rem;
-}
-
-.w-32{
-  width: 8rem;
 }
 
 .max-w-md{
@@ -1042,6 +1066,11 @@ section{
   background-color: rgb(23 37 84 / var(--tw-bg-opacity));
 }
 
+.bg-dark{
+  --tw-bg-opacity: 1;
+  background-color: rgb(15 23 42 / var(--tw-bg-opacity));
+}
+
 .bg-darkBlue{
   --tw-bg-opacity: 1;
   background-color: rgb(9 25 71 / var(--tw-bg-opacity));
@@ -1104,12 +1133,28 @@ section{
   --tw-bg-opacity: 0.7;
 }
 
+.bg-opacity-75{
+  --tw-bg-opacity: 0.75;
+}
+
+.bg-opacity-80{
+  --tw-bg-opacity: 0.8;
+}
+
+.bg-opacity-85{
+  --tw-bg-opacity: 0.85;
+}
+
 .p-4{
   padding: 1rem;
 }
 
 .p-5{
   padding: 1.25rem;
+}
+
+.p-6{
+  padding: 1.5rem;
 }
 
 .px-8{
@@ -1130,6 +1175,11 @@ section{
 .py-14{
   padding-top: 3.5rem;
   padding-bottom: 3.5rem;
+}
+
+.py-20{
+  padding-top: 5rem;
+  padding-bottom: 5rem;
 }
 
 .py-3{
@@ -1227,6 +1277,11 @@ section{
 .text-blue-700{
   --tw-text-opacity: 1;
   color: rgb(29 78 216 / var(--tw-text-opacity));
+}
+
+.text-dark{
+  --tw-text-opacity: 1;
+  color: rgb(15 23 42 / var(--tw-text-opacity));
 }
 
 .text-darkBlue{
@@ -1330,6 +1385,7 @@ section{
 }
 
 .about__title,
+    .section__title,
     .menu__title{
   font-family: IBM Plex Mono, monospace;
   font-size: 1.875rem;
@@ -1340,6 +1396,7 @@ section{
 
 @media (min-width: 1024px){
   .about__title,
+    .section__title,
     .menu__title{
     font-size: 2.25rem;
     line-height: 2.5rem;
