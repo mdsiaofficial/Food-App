@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food App</title>
+
+    <!-- favicon -->
+    <link rel="stylesheet" href="img/favicon.png" type="image/x-icon">
+
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <!-- remix icon -->
+    <linkhref="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet"/>
+
+    <!-- css -->
+    <link rel="stylesheet" href="./output.css">
+
+
+</head>
+<body>
+    
+    <!-- header -->
+    <header class="fixed top-0 left-0 z-50 w-full bg-darkBlue">
+        
+        <!-- nav -->
+        <nav class="container relative flex justify-between items-center">
+            <!-- logo -->
+            <div >
+                <a href="#" class="text-5xl uppercase">Bur<span class="text-primary">ger</span></a>
+            </div>
+
+            <!-- menu -->
+            <div class="hidden absolute top-0 left-0 w-full py-14 bg-primary md:bg-transparent border-2 border-darkBlue md:block md:static md:py-0 md:border-none md:w-auto md:ml-auto" id="nav-menu">
+
+                <!-- menu list -->
+                <ul class="flex flex-col text-center gap-5 mx-10 md:flex-row">
+                    <li><a href="#home" class="nav__link hover:text-primary ease-in duration-600">Home</a></li>
+                    <li><a href="#order" class="nav__link hover:text-primary ease-in duration-600">Order</a></li>
+                    <li><a href="#order" class="nav__link hover:text-primary ease-in duration-600">Review</a></li>
+                </ul>
+
+                <!-- button -->
+                <div class="absolute top-[0.7rem] right-2" >
+                    <!-- <i class="ri-close-line"></i> -->
+                    <i id="nav-close" class="md:hidden text-2xl cursor-pointer fa-solid fa-x"></i>
+                    <!-- <h1 id="nav-close" class="text-lg cursor-pointer">X</h1> -->
+                    <!-- <img id="nav-close" class="bg-white rounded-full" src="/src/img/icons/close-line.png" alt=""> -->
+                </div>
+            </div>
+            
+            <!-- moon-line -->
+            <div class="flex justify-center items-center gap-2">
+                <!-- <i class="ri-moon-line"></i> -->
+                <i id="dark-btn" class="text-2xl cursor-pointer fa-regular fa-moon"></i>
+                <!-- <h1 class="cursor-pointer ml-4 text-xl">DL</h1> -->
+                <!-- <img id="dark-btn" class="bg-white rounded-full" src="/src/img/icons/moon-line.png" alt=""> -->
+                
+                <!-- menu-line -->
+                <!-- <i class="ri-menu-2-line">M</i> -->
+                <i id="menu-btn" class="md:hidden text-2xl cursor-pointer fa-solid fa-bars"></i>
+                <!-- <img id="menu-btn" class="cursor-pointer w-auto bg-white rounded-full" src="/src/img/icons/menu-2-line.png" alt=""> -->
+                <!-- <h1 id="menu-btn" class="cursor-pointer text-xl">M</h1> -->
+                
+            </div>
+        </nav>
+    </header>
+
+
+    <!-- main -->
+    <main>
+
+        <!-- home -->
+        <section id="home">
+            <div class="container flex flex-col items-center gap-10 md:flex-row">
+                <div class="mx-auto md:basis-1/2 lg:basis:2/5">
+                    <img src="./img/home-image.png" alt="home-image" class="w-60 md:w-full">
+                </div>
+    
+                <div class="text-center">
+                    <h1 class="home__title">Oh wow, fvcking Burger!</h1>
+    
+                    <div class="seperator mx-auto"></div>
+    
+                    <p class="paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus porro autem explicabo aliquid eum repudiandae aperiam voluptatibus, asperiores nam eius tempora reprehenderit velit, libero non maxime possimus totam cumque laboriosam.</p>
+    
+                    <div class="text-base flex items-center justify-center gap-4 py-5">
+                        <div class="text-center">
+                            <i class="fa-solid fa-utensils text-4xl" style="color: #FFD43B;"></i>
+                            <br>
+                            Delicious
+                        </div>
+    
+                        <div class="text-center">
+                            <i class="fa-solid fa-droplet text-4xl" style="color: #FFD43B;"></i>
+                            <br>
+                            Fresh
+                        </div>
+    
+                        <div class="text-center">
+                            <i class="fa-solid fa-leaf text-4xl" style="color: #FFD43B;"></i>
+                            <br>
+                            Organic
+                        </div>
+                    </div>
+
+                    <a href="#" class="btn btn-primary">Learn More</a>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- footer -->
+
+    <!-- javascript -->
+    <script src="script.js"></script>
+</body>
+</html>

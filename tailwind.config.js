@@ -35,6 +35,7 @@ module.exports = {
         dark: '#0f172a',
         darkLight: '#1e293b',
         darkBlue: "#091947",
+        yellow: "#FFD43B",
       }
     },
     container:{

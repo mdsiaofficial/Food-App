@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600;700&family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Serif:wght@400;500;600;700&family=Overpass+Mono&family=Overpass:ital,wght@0,100..900;1,100..900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base{
+    body{
+        @apply
+        text-white 
+        bg-[#091947] 
+        font-ibmplexMono 
+        tracking-wider;
+    }
+
+    section{
+        @apply
+        pt-16
+        p-4
+        md:pt-20;
+    }
+}
+
+@layer components{
+    .btn{
+        @apply
+        inline-block
+        text-sm
+        py-3 px-8
+        capitalize
+        text-center
+        cursor-pointer
+        rounded-md
+        ease-linear duration-200;
+    }
+
+    .btn-primary{
+        @apply
+        text-black
+        bg-primary
+        hover:opacity-75;
+    }
+}
+@layer utilities{
+    .home__title{
+        @apply
+        text-4xl
+        font-ibmplexMono
+        font-bold
+        uppercase
+        lg:text-6xl;
+    }
+
+    .seperator{
+        @apply
+        w-28 h-[2px]
+        bg-darkBlue
+        my-5;
+    }
+
+    .paragraph{
+        @apply
+        text-xs
+        leading-5;
+    }
+
+
+}
